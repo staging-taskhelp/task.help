@@ -1,9 +1,6 @@
 <?php 
 
 require 'vendor/autoload.php'; // include Composer's autoloader
-$client = new MongoDB\Client(
-    'mongodb+srv://task1:dIo5jDpJvkiJKiHL@cluster1.9p18i.mongodb.net/?retryWrites=true&w=majority');
-
 
 
 $collection = $client->performance->metrics;
@@ -43,17 +40,6 @@ if (mysqli_connect_errno()) {
     exit();
 }
 
-/**
- * Stripe - Payment Gateway integration example (Stripe Checkout)
- * ==============================================================================
- * 
- * @version v1.0: stripe_pay_checkout_demo.php 2016/10/05
- * @copyright Copyright (c) 2016, http://www.ilovephp.net
- * @author Sagar Deshmukh <sagarsdeshmukh91@gmail.com>
- * You are free to use, distribute, and modify this software
- * ==============================================================================
- *
- */
 
 
 
