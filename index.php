@@ -55,19 +55,6 @@ if (mysqli_connect_errno()) {
  *
  */
 
-// Stripe library
-require 'stripe/Stripe.php';
-
-
-$params = array(
-	"private_test_key" => "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",
-	"public_test_key"  => "pk_live_51HaqHhK9vk3XTTvgdce50y8oxZR6fVOZ2vl5skNOI9ec78QSXTyj0w7GdNtNKw4cb9rdhM29eI1c9amdG34moEso00t0RdcIVe"
-);
-
-	Stripe::setApiKey($params['private_test_key']);
-	$pubkey = $params['public_test_key'];
-
-
 
 
 $userNumber = $_GET["un"];
